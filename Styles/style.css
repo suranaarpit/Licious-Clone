@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
+
+
+#topDiv{
+    border: 1px solid white;
+    width: 100%;
+    height: 240px;
+    background-color: rgba(240, 236, 236, 0.623);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#firstDiv{
+    height: 20px;
+}
+#secondDiv{
+    height: 90px;
+    width: 100%;
+    background-color: white;
+}
+#thirdDiv{
+    background-color: rgba(240, 236, 236, 0.623);
+    height: 50%;
+}
+#firstDiv>div{
+    display: flex;
+    
+    width: 100%;
+    height: 20px;
+    margin: auto;
+    background-color: lavender;
+
+}
+
+#tfd{
+   
+    width: 30%;
+    height: 15px;
+    margin: auto;
+    background-color: lavender;
+    font-family: Lato;
+}
+#tfd>p{
+    font-size: 11px;
+    font-weight: 600;
+    margin: auto;
+    text-align: center;
+}
+.bulletDots{
+    width: 8px;
+    height: 4px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+#apple{
+    margin-left: 5px;
+    width: 14px;
+    height: 11px;
+}
+#playStore{
+    margin-left: 5px;
+    width: 14px;
+    height: 11px;
+}
+#tfd1{
+    width: 35%;
+    height: 15px;
+    margin: auto;
+    background-color: lavender;
+    font-family: Lato;
+}
+#tfd1>p{
+    font-size: 11px;
+    font-weight: 600;    
+    margin: auto;
+    text-align: center;
+}
+.downArrow{
+
+    width: 14px;
+    height: 8px;
+}
+
+#secondDiv>div{
+    display: flex;
+    border: 1px solid white;
+    width: 100%;
+    height: 88px;
+    justify-content: center;
+}
+
+#tsd{
+    width: 11%;
+}
+#LiciousLogo{
+    padding: 25px;
+    width: 95px;
+    height: 36.67px;
+}
+#tsd1{
+    display: flex;
+    
+    width: 12%;
+}
+#locimg{
+   
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
+}
+
+#loctext{
+    width: 150px;
+    height: 70px;
+    margin: auto;
+}
+#loctext>p{
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bolder;
+    margin: auto;
+    margin-left: 4px;
+    margin-top: 18px;
+    
+}
+#location{
+    margin-top: 5px;
+    width: 85px;
+    border: none;
+}
+#tsd2{
+    width: 35%;
+}
+
+.search{
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 1px solid grey;
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    color: #9DBFAF;
+    margin: auto;
+  }
+  
+  .searchTerm:focus{
+    color: black;
+  }
+  
+  .searchButton {
+      margin: auto;
+    width: 40px;
+    height: 42px;
+    border: 1px solid grey;
+    background: white;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+#tsd3{
+    display: flex;
+    
+    width: 8%;
+}
+
+.login{
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+.login>img{
+    padding: 7.5px;
+}
+#login{
+  
+    height: 30px;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+#logintext{
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+#tsd4{
+    display: flex;
+    width: 8%;
+}
+.Cart{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+}
+#carttext{
+    
+    height: 30px;
+    width: 60px;
+    margin-top: 22px;
+    margin-left: 3px;
+}
+.textforcard{
+    
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+#navbar{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    gap: 20px;
+}
+.sameelem{
+    height: 100%;
+    width: 30%;
+}
+#deal{
+    width: 60px;
+    
+}
+.samelogo{
+    margin-top: 7px;
+    height: 80px;
+    border-radius: 50px;
+}
+.samelogo>img{
+    height: 80px;
+}
+.sametext{
+    height: 20px;
+    margin-top: 6px;
+}
+.sametext>a{
+    text-decoration: none;
+    color: black;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+#sliding{
+    border: 1px solid black;
+    width: 100%;
+    height: 404px;
+    margin-top: 1px;
+}
+  .c {
+      width: 100%;
+     height: 400px;
+     background-color: white
+  }
+  .swiper{
+      width: 100%;
+      height: 400px;
+  }
+  .swiper-slide img{
+    width: 100%;
+    height: 400px;
+  }
+  .swiper .swiper-button-prev, .swiper .swiper-button-next{
+      color: rgb(145, 145, 133);
+      border-radius: 50%;
+      padding: 30px;
+      background-color:rgb(247, 239, 239)
+  }
