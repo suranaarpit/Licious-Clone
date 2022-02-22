@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
 
+*{
+    font-family: Lato;
+}
 
 #topDiv{
     border: 1px solid white;
@@ -286,3 +289,8 @@
       padding: 30px;
       background-color:rgb(247, 239, 239)
   }
+#empBox{
+    border: 1px solid white;
+    width: 100%;
+    height: 260px;
+}
