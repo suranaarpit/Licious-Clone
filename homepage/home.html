@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet "href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="c">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_620b7b6d14949"></div>
+              <div class="swiper-slide"><img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_620b797c88952"></div>
+              <div class="swiper-slide"><img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_620b79d5c017f"></div>
+              <div class="swiper-slide"><img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_620b7a04f421e"></div>
+              <div class="swiper-slide"><img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_620b7a8d9a432"></div>
+              <div class="swiper-slide"><img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_620b7acabe3b2"></div>
+             
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          </div>
+            <div class="class" style="margin-top: 5%;">
+          <table id="ta" style="margin-top: -1%;">
+            <thead>
+                <tr>
+                    <th>Premium  Produce</th>
+                    <th style="font-size: 25px;">|</th>
+                    <th>World-Class Central Production Unit</th>
+                    <th>|</th>
+                    <th>150 Quality Checks</th>
+                    <th>|</th>
+                    <th>Delivered Fresh Everyday</th>
+                    <th>|</th>
+                    <th>Extraordinary Cooking</th>
+                </tr>
+            </thead>
+            <tbody id="body">
+            </tbody>
+        </table>
+        <div id="h3" style="text-align: center;margin: auto; color: red; margin-top: -7%; background-color:white; width: 30%;"><h2>Know the Licious way</h2></div>
+    
+    </div>
+    <div id="conitenr">
+        
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay:3000,
+                disebleOnInteraction:false,
+            },
+           loop: true,
+
+          pagination: {
+          el: '.swiper-pagination',
+          },
+
+  // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+       },
+
+         });
+    </script>
+</body>
+</html>
