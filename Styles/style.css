@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
 
+body{
+    background-color: whitesmoke;
+}
+
 *{
     font-family: Lato;
 }
@@ -144,6 +148,7 @@
     margin-top: 15px;
     position: relative;
     display: flex;
+    
 }
 
 .searchTerm {
@@ -156,6 +161,7 @@
     outline: none;
     color: #9DBFAF;
     margin: auto;
+    background-color: rgba(243, 240, 240, 0.623);
   }
   
   .searchTerm:focus{
@@ -163,7 +169,7 @@
   }
   
   .searchButton {
-      margin: auto;
+    margin: auto;
     width: 40px;
     height: 42px;
     border: 1px solid grey;
@@ -173,6 +179,8 @@
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     font-size: 20px;
+    border-left: 0px;
+    background-color: rgba(243, 240, 240, 0.623);
   }
   
 #tsd3{
@@ -203,6 +211,7 @@
     font-family: Lato;
     font-size: 13px;
     font-weight: bolder;
+    margin-left: 5px;
 }
 
 #tsd4{
@@ -212,13 +221,13 @@
 .Cart{
     width: 25px;
     height: 25px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 #carttext{
     
     height: 30px;
     width: 60px;
-    margin-top: 22px;
+    margin-top: 25px;
     margin-left: 3px;
 }
 .textforcard{
@@ -265,7 +274,6 @@
 }
 
 #sliding{
-    border: 1px solid black;
     width: 100%;
     height: 404px;
     margin-top: 1px;
@@ -293,4 +301,18 @@
     border: 1px solid white;
     width: 100%;
     height: 260px;
+}
+#liway{
+    width: 100%;
+    height: 150px;
+}
+#liciousway{
+    width: 70%;
+    height: 130px;
+    margin: auto;
+    margin-top: 10px;
+}
+#liciousway>img{
+    width: 100%;
+    height: 130px;
 }
