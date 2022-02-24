@@ -10,7 +10,7 @@
   /* margin-left: 10px; */
   width: 80%;
   margin: auto;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   /* border: 1px solid green; */
 }
 .main {
@@ -120,4 +120,35 @@ h6 {
   color: white;
   font-size: 10px;
   padding-right: 10px;
+}
+.refermain{
+  display: flex;
+  margin-left: 150px;
+  font-weight: 900;
+  font-size: 15px;
+  }
+/* .refermain:hover {
+  color: red;
+} */
+a{
+  
+  text-decoration: none;
+  
+}
+.atulegg:hover{
+  color:red
+}
+a:hover{
+  color: red;
+}
+a:visited {
+  color: black;
+}
+.head{
+  margin-left: 150px;
+  /* padding-left:50px */
+}
+.bar{
+  margin-left: 150px;
+  margin-right: 200px;
 }

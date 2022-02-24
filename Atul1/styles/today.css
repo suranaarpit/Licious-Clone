@@ -122,3 +122,35 @@ h6 {
   font-size: 10px;
   padding-right: 10px;
 }
+
+.refermain{
+display: flex;
+margin-left: 150px;
+font-weight: 900;
+font-size: 15px;
+}
+/* .refermain:hover {
+  color: red;
+} */
+a{
+  
+  text-decoration: none;
+  
+}
+.atultoday:hover{
+  color:red;
+}
+a:hover{
+  color: red;
+}
+a:visited {
+  color: black;
+}
+.head{
+  margin-left: 150px;
+  /* padding-left:50px */
+}
+.bar{
+  margin-left: 150px;
+  margin-right: 200px;
+}
