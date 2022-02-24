@@ -132,10 +132,16 @@ font-size: 15px;
 /* .refermain:hover {
   color: red;
 } */
+#clr{
+  color:red;
+}
 a{
   
   text-decoration: none;
   
+}
+#clr{
+  color:red;
 }
 .atultoday:hover{
   color:red;

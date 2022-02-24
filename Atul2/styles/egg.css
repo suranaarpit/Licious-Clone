@@ -135,6 +135,9 @@ a{
   text-decoration: none;
   
 }
+#clr{
+  color:red;
+}
 .atulegg:hover{
   color:red
 }
