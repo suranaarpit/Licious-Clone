@@ -144,3 +144,7 @@ h6 {
   a:visited {
     color: black;
   }
+  .head{
+    margin-left: 150px;
+    width: 77%;
+  }
