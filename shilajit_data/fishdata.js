@@ -32,6 +32,7 @@ var fishData=[
         off:"25",
         off_tag:"%OFF",
     },
+   
     {
         imgUrl:"https://dao54xqhg9jfa.cloudfront.net/ProductMerchantdising/958f431a-9b65-3430-2c3e-90f5e3aed0d2/original/1599923920.2257--2020-09-1220_48_40--738.jpeg?format=webp",
         name:"Premium Mackerel (Bangda) Small - Whole, Cleaned",

@@ -1,6 +1,15 @@
 var fishData=JSON.parse(localStorage.getItem("fishdata"))||[];
 console.log("fishData",fishData);
+    _fish(fishData);
+
+
+    function  _fish(fishData){
+
+
+
 fishData.map(function(e,index,array){
+
+    //
     var main= document.createElement("div");
     main.setAttribute("class","main");
     var img=document.createElement("img");
@@ -47,13 +56,17 @@ fishData.map(function(e,index,array){
     btndiv.setAttribute("class","btndiv");
    var  addCart=document.createElement("button");
    addCart.setAttribute("class","addcartbtn");
-   addCart.innerHTML="Add to Cart";
+   addCart.innerText="Add to Cart";
 
-
+    
     wgt.append(net_tag,net,n_gm,gross_tag,gross,g_gm);
+    
+    btndiv.append(addCart)
     pri.append(price_tag,cuurency,price,strikePrice,addCart);
-    // btndiv.append(addCart)
+     
     
     main.append(img,name,des,wgt,pri);
     document.querySelector("#container").append(main);
 })
+
+    }

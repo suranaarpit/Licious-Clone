@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap");
+* {
+  font-family: Lato;
+  
+}
+body{
+    background-color: whitesmoke;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 20px; */
+  margin-top: 50px;
+  /* margin-left: 10px; */
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid green; */
+}
+.main {
+  width: 88%;
+  height: 350px;
+  /* border: 1px solid green; */
+  justify-content: space-evenly;
+  border-radius: 10px;
+  /* margin-left: 50px; */
+  box-shadow: rgba(99, 99, 99, 0.2) 10px 2px 8px 0px;
+  margin-top: 20px;
+}
+.image {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+h4 {
+  margin-left: 5px;
+  margin-top: -2px;
+  white-space: wrap;
+  width: 300px;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* border: 1px solid #000000; */
+}
+/* h4:hover{
+        overflow: visible;
+    } */
+
+.des {
+  margin-left: 5px;
+  margin-top: -6px;
+  font-size: 13px;
+  white-space: nowrap;
+  width: 300px;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .hold{
+        display: flex;
+        justify-content: space-between;
+    } */
+.wgt {
+  margin-left: 5px;
+  margin-top: -28px;
+  display: flex;
+  color: rgb(56, 55, 55);
+}
+
+h6 {
+  font-size: 13px;
+}
+.wgt :nth-child(1) {
+  margin-left: 1px;
+}
+.wgt :nth-child(2) {
+  margin-left: 5px;
+}
+
+.wgt :nth-child(3) {
+  margin-left: 1px;
+}
+.wgt :nth-child(4) {
+  margin-left: 10px;
+}
+.wgt :nth-child(5) {
+  margin-left: 5px;
+}
+
+.pri {
+  margin-left: 5px;
+  margin-top: -40px;
+  display: flex;
+  color: rgb(56, 55, 55);
+}
+.pri :nth-child(1) {
+  color: red;
+  font-size: 15px;
+}
+.pri :nth-child(2) {
+  margin-top: 25px;
+  margin-left: 5px;
+}
+.pri :nth-child(3) {
+  margin-top: 25px;
+}
+.pri :nth-child(4) {
+  margin-top: 23px;
+  margin-left: 10px;
+}
+.addcartbtn {
+  margin-left: 120px;
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(233, 78, 76);
+  color: white;
+  font-size: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+/* refer */
+.refermain{
+  display: flex;
+  margin-left: 150px;
+  font-weight: 900;
+  font-size: 15px;
+  }
+  .refermain:hover {
+    color: red;
+  }
+  a{
+    
+    text-decoration: none;
+    
+  }
+  a.hover{
+    color: red;
+  }
+  a:visited {
+    color: black;
+  }
