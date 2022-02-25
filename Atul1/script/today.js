@@ -1,8 +1,8 @@
 var todaydata = JSON.parse(localStorage.getItem("todaydata")) || [];
 console.log("todaydata", todaydata);
 todaydata.map(function (e, index, array) {
-  var main = document.createElement("div");
-  main.setAttribute("class", "main");
+  var todaymain = document.createElement("div");
+  todaymain.setAttribute("class", "main");
   var img = document.createElement("img");
   img.setAttribute("src", e.imgUrl);
   img.setAttribute("class", "image");
@@ -52,6 +52,6 @@ todaydata.map(function (e, index, array) {
   pri.append(price_tag, cuurency, price, strikePrice, addCart);
   // btndiv.append(addCart)
 
-  main.append(img, name, des, wgt, pri);
-  document.querySelector("#container").append(main);
+  todaymain.append(img, name, des, wgt, pri);
+  document.querySelector("#container").append(todaymain);
 });

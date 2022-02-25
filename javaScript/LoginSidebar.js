@@ -54,7 +54,7 @@ function getOtp(event){
       logout.style.display = "block"
       document.querySelector("#mobile").value = "";
       document.querySelector("#onetimepass").value = "";
-      
+      localStorage.setItem("confirm", JSON.stringify("1"))
       
         // otp="";
     }
@@ -63,13 +63,17 @@ document.querySelector("#confirmLogin").addEventListener("click",function(event)
     getOtp();
 })
 function logoutFun(){
-    var login = document.querySelector("#login")
+    var a = JSON.parse(localStorage.getItem("confirm"))
+    if(a!=null){
+        var login = document.querySelector("#login")
         login.style.display = "block";
         // document.querySelector("#loginside").classList.remove("loginactive")
         // var cLogin = document.querySelector("#closelogin")
         // cLogin.style.display = "none";
       var logout = document.querySelector("#logouttext")
       logout.style.display = "none"
+    }
+    
 }
 
 // document.querySelector("#confirmLogin").addEventListener("click",loginDone)

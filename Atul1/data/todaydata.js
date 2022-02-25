@@ -242,7 +242,7 @@ var todaydata=[
        price_tag:"MRP:",
        currency:"₹",
       price:"395",
-      strikePrice:"",
+      strikePrice:"465",
       off:"10",
       off_tag:"% OFF"
 

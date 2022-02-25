@@ -50,6 +50,7 @@
     background-color: white;
     cursor: pointer;
     display: none;
+    margin-top: 28px;
 }
 #logouttext:hover{
 

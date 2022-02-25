@@ -161,24 +161,24 @@ var eggdata=[
         off:"15",
         off_tag:"% OFF"
     },
-    {
-         imgUrl:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_autkr50l4st/11/prod_display_image/1626360346.0053--2021-07-1520:15:46--738",
-        name:"Classic Eggs - Pack Of 24",
-        des:"Naturally laid eggs, no antibiotic residue",
-        net_tag:"Net wt:",
-        net:"",
-        gross_tag:"Gross:",
-        gross:"",
-        Pieces_tag:"Pieces:",
-        pieces:"",
-        unit:"gms",
-        price_tag:"MRP:",
-        currency:"₹",
-        price:"196",
-        strikePrice:"230",
-        off:"15",
-        off_tag:"% OFF"
-    },
+    // {
+    //      imgUrl:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_autkr50l4st/11/prod_display_image/1626360346.0053--2021-07-1520:15:46--738",
+    //     name:"Classic Eggs - Pack Of 24",
+    //     des:"Naturally laid eggs, no antibiotic residue",
+    //     net_tag:"Net wt:",
+    //     net:"",
+    //     gross_tag:"Gross:",
+    //     gross:"",
+    //     Pieces_tag:"Pieces:",
+    //     pieces:"",
+    //     unit:"gms",
+    //     price_tag:"MRP:",
+    //     currency:"₹",
+    //     price:"196",
+    //     strikePrice:"230",
+    //     off:"15",
+    //     off_tag:"% OFF"
+    // },
     
 
 
