@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
+
+body{
+    background-color: whitesmoke;
+}
+
+*{
+    font-family: Lato;
+}
+
+
+
+#navbar{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    gap: 20px;
+    margin-top: 10px;
+}
+.sameelem{
+    height: 100%;
+    width: 30%;
+}
+#deal{
+    width: 60px;
+    
+}
+.samelogo{
+    margin-top: 7px;
+    height: 80px;
+    border-radius: 50px;
+}
+.samelogo>img{
+    height: 80px;
+}
+.sametext{
+    height: 20px;
+    margin-top: 6px;
+}
+.sametext>a{
+    text-decoration: none;
+    color: black;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 5px;
+}
+.sametext>a:hover{
+    color: red;
+}

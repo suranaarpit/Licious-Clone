@@ -6,12 +6,23 @@ body{
 
 *{
     font-family: Lato;
+    font-weight: bolder;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
+
+body{
+    background-color: whitesmoke;
+}
+
+*{
+    font-family: Lato;
 }
 
 #topDiv{
     border: 1px solid white;
     width: 100%;
-    height: 240px;
+    height: fit-content;
     background-color: rgba(240, 236, 236, 0.623);
     position: fixed;
     top: 0;
@@ -200,13 +211,63 @@ body{
 
 
 
-#liciousway{
-    width: 70%;
-    height: 130px;
+.searchbox{
+    height: 50px;
+    width: 80%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    transition: transform .20s;
+    
 }
-#liciousway>img{
+.searchbox:hover{
+    transform: scale(1.5);
+    width: 60%;
+}
+
+#searchinput{
+    /* transition: transform .20s; */
     width: 100%;
-    height: 130px;
-}
+    border: 1px solid grey;
+    border-right: none;
+    padding: 5px;
+    height: 35px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    color: black;
+    margin: auto;
+    background-color: rgba(243, 240, 240, 0.623);
+  }
+  /* #search:hover{
+    transform: scale(1.5);
+    width: 50%;
+  } */
+  
+  .searchTerm:focus{
+    color: black;
+  }
+  
+  .searchButton {
+    margin: auto;
+    width: 40px;
+    height: 47px;
+    border: 1px solid grey;
+    background: white;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 20px;
+    border-left: 0px;
+    background-color: rgba(243, 240, 240, 0.623);
+  }
+
+
+  
+  #searchResult{
+      border: 1px solid black;
+      width: 100%;
+      height: 800px;
+      margin-top: 10px;
+  }

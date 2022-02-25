@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
+
+body{
+    background-color: whitesmoke;
+}
+
+*{
+    font-family: Lato;
+}
+
+
+
+#sliding{
+    width: 100%;
+    height: 404px;
+    margin-top: 1px;
+}
+  .c {
+      width: 100%;
+     height: 400px;
+     background-color: white
+  }
+  .swiper{
+      width: 100%;
+      height: 400px;
+  }
+  .swiper-slide img{
+    width: 100%;
+    height: 400px;
+  }
+  .swiper .swiper-button-prev, .swiper .swiper-button-next{
+      color: rgb(145, 145, 133);
+      border-radius: 50%;
+      padding: 30px;
+      background-color:rgb(247, 239, 239)
+  }
+#empBox{
+    border: 1px solid white;
+    width: 100%;
+    height: 260px;
+}
+#liway{
+    width: 100%;
+    height: 150px;
+}

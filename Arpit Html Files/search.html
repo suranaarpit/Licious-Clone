@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licious - Search</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/Downloaded Images/redketchup/favicon.ico">
+    <link rel="stylesheet" href="/Downloaded Images/redketchup/android-chrome-192x192.png">
+    <link rel="stylesheet" href="/Downloaded Images/redketchup/apple-touch-icon.png">
+    <link rel="stylesheet" href="/Downloaded Images/redketchup/favicon-16x16.png">
+    <link rel="stylesheet" href="/Downloaded Images/redketchup/favicon-32x32.png">
+
+    <!-- styles Links-->
+
+    <link rel="stylesheet" href="/Styles/searchinput.css">
+    <link rel="stylesheet" href="/Styles/cartsidebar.css">
+
+</head>
+<body>
+    <div id="topDiv">
+        <div id="firstDiv">
+            <div>
+                <div id="tfd">
+                <p><a style="text-decoration: none; color: rgba(0, 0, 0, 0.719);" href="#">Why Licious?</a> 
+                    <span><img class="bulletDots" src="/Downloaded Images/Bullet Dots.png" alt="bullet_dots"></span>
+                    <span style="color: rgba(0, 0, 0, 0.719)">Download App</span><span><a href="#"><img id="apple" src="https://www.licious.in/img/default/ios_app_icon.svg" alt="apple"></a></span>
+                    <span><a href="#"><img id="playStore" src="https://www.licious.in/img/default/android_app_icon.svg" alt=""></a></span>
+                </p>
+                </div>
+                <div id="tfd1">
+                    <p><a style="text-decoration: none; color: rgba(0, 0, 0, 0.719);" href="#">FSSC 22000 Certification</a>
+                        <span><img class="bulletDots" src="/Downloaded Images/Bullet Dots.png" alt="bullet_dots"></span>
+                        <span><a style="text-decoration: none; color: rgba(0, 0, 0, 0.719);" href="#">About Us</a></span>
+                        <span><img class="bulletDots" src="/Downloaded Images/Bullet Dots.png" alt="bullet_dots"></span>
+                        <span><a style="text-decoration: none; color: rgba(0, 0, 0, 0.719);" href="#">Careers @Licious</a></span>
+                        <span><img class="bulletDots" src="/Downloaded Images/Bullet Dots.png" alt="bullet_dots"></span>
+                        <span><a style="text-decoration: none; color: rgba(0, 0, 0, 0.719);" href="#">Contact Us</a> 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="secondDiv">
+            <div>
+                <!-- licious logo -->
+                <div id="tsd"> 
+                    <a href="/index.html"><img id="LiciousLogo" src="https://www.licious.in/img/default/licious-logo.svg" alt="Licious"></a>
+                </div>
+
+                <!-- location section -->
+                <div id="tsd1">
+                    <div id="locimg">
+                        <img src="https://www.licious.in/img/default/location_icon.svg" alt="location_img">
+                    </div>
+
+                    <!-- cities we serve -->
+                    <div id="loctext"> 
+                        <p id="scity">Select City</p>
+                        <select name="" id="location" onclick="showCities()">
+                            <option value=""disabled selected hidden>Enter City</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="NCR ">NCR </option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Panchkula">Panchkula</option>
+                            <option value="Mohali">Mohali</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Cochin">Cochin</option>
+                            <option value="Vijayawada">Vijayawada</option>
+                            <option value="visakhapatnam">visakhapatnam</option>
+                            <option value="pondicherry">pondicherry</option>
+                            <option value="Trichy">Trichy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- searchbar section -->
+                <div id="tsd2">
+                    <div class="searchbox"> 
+                        <input type="text" id="searchinput" onkeyup="search()" placeholder="Search for any delicious product">
+                        <button type="submit" class="searchButton">
+        <img src="https://www.licious.in/img/default/search_icon.svg" alt=""></button>
+                    </div>
+                </div>
+
+
+                <!-- Login/signup section -->
+                <div id="tsd3">
+                    <div class="login">
+                        <img src="https://www.licious.in/img/default/profile_icon.svg" alt="User">
+                    </div>
+                    <div id="login">
+                        <p><button id="logintext" style="text-decoration: none;">Login</button></p>
+                    </div>
+                </div>
+
+
+                <!-- Add to Cart Section -->
+                <div id="tsd4">
+                    <div class="Cart">
+                        <img src="https://www.licious.in/img/default/cart_icon.svg" alt="addToCart">
+                    </div>
+                    <div id="carttext"><a class="textforcard" style="text-decoration: none; color: black;" href="#">Cart</a></div>
+                </div>
+            </div>
+        </div>
+<!-- cart sidebar -->
+<div id="cartside">
+    <div id="closecart">
+        x
+    </div>
+</div>
+
+<!-- search result -->
+
+<div id="searchResult">
+
+</div>
+</body>
+</html>
+
+
+<script src="/javaScript/searchbar.js"></script>
+<script src="/javaScript/citiylocater.js"></script>
+<script src="/javaScript/cartsidebar.js"></script>

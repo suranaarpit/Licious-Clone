@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
 
   .c {
       width: 100%;
@@ -20,10 +21,10 @@
   }
   
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
 *{
     font-family: Lato;
 }
+
 
    #input {
      padding-top: 1%;
@@ -40,7 +41,7 @@
      border-radius: 20px;
      height: 250px;
      overflow: hidden
-  
+    
    }
    #input >  div :first-child {
      height: 200px;
@@ -72,6 +73,7 @@
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 10px 2px 8px 0px;
     margin-top: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     }
     .image{
         width: 100%;
@@ -165,15 +167,16 @@
         margin-left: 10px;
     }
     .addcartbtn{
-        margin-left: 120px;
+        margin-left: 150px;
         margin-bottom: 2px;
-
-        width: 80%;
+        width: 100px;
         height: 40px;
         border-radius: 5px;
         border: 0px;
-        background-color:rgb(233,78,76) ;
+        background-color:crimson ;
         color: white;
+        cursor: pointer;
+        font-weight: bolder;
     }
 
    #bonelessCuts {
@@ -223,3 +226,14 @@
         }
        
    
+
+        .categories{
+            text-align: center;  
+            color : #3e4d60; 
+            margin-top: -15px; 
+            cursor: pointer;
+        }
+
+        .catImg{
+            cursor: pointer;
+        }

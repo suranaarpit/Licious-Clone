@@ -5,10 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Meat Online - Buy Fresh & High Quality Meat at Best Prices only on Licious</title>
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="/Downloaded Images/redketchup/favicon.ico">
+    <link rel="stylesheet" href="/Downloaded Images/redketchup/android-chrome-192x192.png">
+    <link rel="stylesheet" href="/Downloaded Images/redketchup/apple-touch-icon.png">
+    <link rel="stylesheet" href="/Downloaded Images/redketchup/favicon-16x16.png">
+    <link rel="stylesheet" href="/Downloaded Images/redketchup/favicon-32x32.png">
+
+    <!-- styles Links-->
+
     <link rel="stylesheet" href="/Styles/style.css">
     <link rel="stylesheet "href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet" href="/Styles/searchbar.css">
+    <link rel="stylesheet" href="/Styles/banner.css">
+    <link rel="stylesheet" href="/Styles/mainNavbar.css">
+    <link rel="stylesheet" href="/SAGAR/home.css">
+    <link rel="stylesheet" href="/Styles/cartsidebar.css">
+    <link rel="stylesheet" href="/Styles/loginsidebar.css">
+    
 </head>
 <body>
     <div id="topDiv">
@@ -29,7 +43,6 @@
                         <span><a style="text-decoration: none; color: rgba(0, 0, 0, 0.719);" href="#">Careers @Licious</a></span>
                         <span><img class="bulletDots" src="/Downloaded Images/Bullet Dots.png" alt="bullet_dots"></span>
                         <span><a style="text-decoration: none; color: rgba(0, 0, 0, 0.719);" href="#">Contact Us</a> 
-                        <img class="downArrow" src="/Downloaded Images/Down Arrow.png" alt=""></span>
                     </p>
                 </div>
             </div>
@@ -38,16 +51,21 @@
 
         <div id="secondDiv">
             <div>
-                <div id="tsd">
+                <!-- licious logo -->
+                <div id="tsd"> 
                     <a href="/index.html"><img id="LiciousLogo" src="https://www.licious.in/img/default/licious-logo.svg" alt="Licious"></a>
                 </div>
+
+                <!-- location section -->
                 <div id="tsd1">
                     <div id="locimg">
                         <img src="https://www.licious.in/img/default/location_icon.svg" alt="location_img">
                     </div>
+
+                    <!-- cities we serve -->
                     <div id="loctext"> 
                         <p id="scity">Select City</p>
-                        <select name="" id="location">
+                        <select name="" id="location" onclick="showCities()">
                             <option value=""disabled selected hidden>Enter City</option>
                             <option value="Bengaluru">Bengaluru</option>
                             <option value="NCR ">NCR </option>
@@ -68,30 +86,43 @@
                         </select>
                     </div>
                 </div>
+
+                <!-- searchbar section -->
                 <div id="tsd2">
-                    <div class="search">
-                        <input type="text" class="searchTerm" placeholder="Search for any delicious product">
-      <button type="submit" class="searchButton">
-        <img src="https://www.licious.in/img/default/search_icon.svg" alt="">
-     </button>
+                    <div class="searchbox">
+                        <button id="search"><a style="text-decoration: none; color: black;" href="/Arpit Html Files/search.html">Search for any delicious product</a></button>                
+                        <!-- <input type="text" id="search" onkeyup="search()" placeholder="Search for any delicious product"> -->
+                        <button type="submit" class="searchButton">
+        <img src="https://www.licious.in/img/default/search_icon.svg" alt=""></button>
                     </div>
                 </div>
+
+
+                <!-- Login/signup section -->
                 <div id="tsd3">
                     <div class="login">
                         <img src="https://www.licious.in/img/default/profile_icon.svg" alt="User">
                     </div>
                     <div id="login">
-                        <p><a id="logintext" style="text-decoration: none; color: black;" href="#">Login</a></p>
+                    <p><button id="logintext" style="text-decoration: none;">Login</button></p>
+                    </div>
+                    <div id="logout">
+                        <p><button onclick="logoutFun()" id="logouttext" style="text-decoration: none;">Logout</button></p>
                     </div>
                 </div>
+
+
+                <!-- Add to Cart Section -->
                 <div id="tsd4">
                     <div class="Cart">
                         <img src="https://www.licious.in/img/default/cart_icon.svg" alt="addToCart">
                     </div>
-                    <div id="carttext"><a class="textforcard" style="text-decoration: none; color: black;" href="">Cart</a></div>
+                    <div id="carttext"><a class="textforcard" style="text-decoration: none; color: black;" href="#">Cart</a></div>
                 </div>
             </div>
         </div>
+
+        <!-- Main Nav Bar with Product Names -->
 
         <div id="thirdDiv"> 
             <div id="navbar">
@@ -100,7 +131,7 @@
                         <img src="https://dao54xqhg9jfa.cloudfront.net/Category/f78249a3-c0c5-caae-a743-5b3669471b19/original/1601901874.191--2020-10-0518_14_34--472.png?format=webp" alt="deal">
                     </div>
                     <div class="sametext">
-                        <a href="#">Today's Deals</a>
+                        <a href="/Arpit Html Files/happy-hours.html">Today's Deals</a>
                     </div>
                 </div>
                 <div class="sameelem">
@@ -171,10 +202,10 @@
         </div>
     </div>
 
-    <div id="empBox">
+    <!-- empty container -->
+    <div id="empBox"></div>
 
-    </div>
-
+    <!-- Sliding Banner -->
     <div id="sliding">
         <div class="c">
             <div class="swiper">
@@ -200,13 +231,166 @@
         </div>
     </div>
     </div>
+
+    <!-- Licious Way Banner -->
     <div id="liway">
         <div id="liciousway">
             <img src="/Downloaded Images/Licious Way.PNG" alt="Licious Way">
         </div>
     </div>
+
+    <!-- Home Page -->
+    <div class=".homepagebox">
+        <h1 style="margin-left: 10%; font-weight: bolder; color: rgb(65, 64, 64);">Best Sellers</h1>
+       <div  id="container">
+        
+        </div>
+        <div>
+            <h1 style="margin-left: 10%; font-weight: bolder; color: rgb(65, 64, 64); margin-top: 35px;">Boneless Cuts</h1>
+        </div>
+        <div id="bonelessCuts">
+            
+        </div>
+       
+        <h1 style="margin-left: 10%; font-weight: bolder; color: rgb(65, 64, 64); margin-top: 50px;">Explore by Category</h1>
+      <div id="input">
+       
+        <div>
+            <div>
+            <img class="catImg"  src="https://s3-ap-southeast-1.amazonaws.com/licious/cat/44/cat_tile_img/1603809314.0951--2020-10-2720:05:14--472?format=webp">
+            </div>
+            <div class="categories"><h3>Today's Deals</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://dao54xqhg9jfa.cloudfront.net/Category/e883d949-b5c7-b95d-3652-3bc2c53b0816/original/1603646230.3323--2020-10-2522_47_10--738.jpeg?format=webp">
+            </div>
+            <div class="categories"><h3>Chicken</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://dao54xqhg9jfa.cloudfront.net/Category/7948e90c-5b27-abdc-c33c-29fc3ca485ea/original/1603646285.4662--2020-10-2522_48_05--738.jpeg?format=webp">
+            </div>
+            <div class="categories" ><h3>Fish & Seafood</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://dao54xqhg9jfa.cloudfront.net/Category/bdfca08e-566b-4439-0aac-9c100704cb0b/original/1603646527.5457--2020-10-2522_52_07--738.jpeg?format=webp">
+            </div>
+            <div class="categories" ><h3>Eggs</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://dao54xqhg9jfa.cloudfront.net/Category/ae9f4c10-4fdb-633a-9688-de8a0693381f/original/1603646326.9208--2020-10-2522_48_46--738.jpeg?format=webp">
+            </div>
+            <div class="categories" "><h3>Mutton</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://s3-ap-southeast-1.amazonaws.com/licious/cat/4/cat_tile_img/1609086575.0106--2020-12-2721:59:35--738?format=webp">
+            </div>
+            <div class="categories" "><h3>Ready to Cook</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://dao54xqhg9jfa.cloudfront.net/Category/4073bb7f-24ac-d482-06cf-1aa87d471940/original/1603646492.575--2020-10-2522_51_32--738.jpeg?format=webp">
+            </div>
+            <div class="categories" "><h3>Spreads</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://dao54xqhg9jfa.cloudfront.net/Category/5b7cb503-fe25-430e-cd71-43b044b0273e/original/1603646565.5089--2020-10-2522_52_45--738.jpeg?format=webp">
+            </div>
+            <div class="categories" "><h3>Cold Cuts</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://dao54xqhg9jfa.cloudfront.net/Category/8209cc57-cc85-4e5d-ac6b-4d8f2f36c1ce/original/1604645369.2866--2020-11-0612_19_29--738.jpeg?format=webp">
+            </div>
+            <div class="categories" "><h3>Combos</h3></div>
+        </div>
+        
+        <div>
+            <div>
+            <img class="catImg" src="https://dao54xqhg9jfa.cloudfront.net/Category/2105beee-e9a9-3efd-4912-2b9657f32d99/original/1604284739.3526--2020-11-0208_08_59--472.jpeg?format=webp">
+            </div>
+            <div class="categories""><h3>Prawns</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://s3-ap-southeast-1.amazonaws.com/licious/cat/39/cat_tile_img/1615189680.1921--2021-03-0813:18:00--472?format=webp">
+            </div>
+            <div class="categories" "><h3>Kebabs & Tandoor</h3></div>
+        </div>
+        <div>
+            <div>
+            <img class="catImg" src="https://s3-ap-southeast-1.amazonaws.com/licious/cat/31/cat_tile_img/1615563449.8908--2021-03-1221:07:29--472?format=webp">
+            </div>
+            <div class="categories" ><h3>Super Saver Packs</h3></div>
+        </div>
+        
+        
+    </div>
+    <h1 style="margin-left: 10%;; font-weight: bolder; color: rgb(65, 64, 64); margin-bottom: 30px;">Check out our blog</h1>
+    <div id="blog" style="line-height: 30px;">
+        
+       </div>
+    </div>
+
+    <!-- Cart Side Bar Imp -->
+<div id="cartside">
+    <div id="closecart">
+        <img class="close" src="https://img.favpng.com/5/22/13/circled-icon-close-icon-png-favpng-e2Q9yiynXxdwycwvafW4CtPTp.jpg" alt="close">
+    </div>
+</div>
+
+
+
+<!-- Login Side bar Imp -->
+<div id="loginside">
+    <div id = "closelogin">
+        <img class="close" src="https://img.favpng.com/5/22/13/circled-icon-close-icon-png-favpng-e2Q9yiynXxdwycwvafW4CtPTp.jpg" alt="close">
+    </div>
+    <div id="loginimgbanner">
+        <img src="https://www.licious.in/img/default/logo-white.png" alt="logo">
+        <!-- <img id="liciousloginbanner" src="https://www.licious.in/img/default/user-login.png" alt="Liciousbanner"> -->
+    </div>
+    <div class="logininfo">
+        <div class="logheading">
+            <p>Sign In/Sign Up</p>
+        </div>
+        <div class="loginform">
+            <div class="form">
+                <input type="number" onkeypress="getMobile()" id="mobile" placeholder="Enter Mobile Number">
+                <hr>
+            </div>
+            <h3 id="otphead">
+                Enter OTP
+            </h3>
+            <div class="otp">
+                <input type="number" onkeypress="getOtp()" id="onetimepass" placeholder="Enter OTP">
+                <hr id="line">
+                <!-- <input type="button" placeholder="Get OTP"> -->
+            </div>
+            
+        <div id="proceed">
+            <a href="#"><button id="confirmLogin">proceed Via OTP</button></a>
+        </div>
+        <p class="signing">
+            By signing in you agree to our <a class="tC" href="#">terms and conditions</a>
+        </p>
+        </div>
+        
+    </div>
+</div>
 </body>
 </html>
 
+<!-- Scripts Links -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="/javaScript/banner.js"></script>
+<script src="/javaScript/citiylocater.js"></script>
+<script src="/SAGAR/data.js"></script>
+<script src="/SAGAR/homedata.js"></script>
+<script src="/javaScript/cartsidebar.js"></script>
+<script src="/javaScript/LoginSidebar.js"></script>

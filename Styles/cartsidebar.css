@@ -1,0 +1,29 @@
+#cartside{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* right: 0; */
+    width: 400px;
+    height: 100vh;
+    z-index: 2000;
+    transition: .5s ease;
+    box-shadow: rgb(0, 0, 0) 0px 30px 90px;
+}
+.cartactive{
+    right: 0!important;
+}
+#closecart{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 420px;
+    font-size: 50px;
+    cursor: pointer;
+    
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+}
