@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap");
+.bag {
+  width: 80%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.bag > div {
+  width: 40%;
+  height: 500px;
+  /* border: 1px solid gray; */
+}
+
+h1 {
+  font-family: Lato;
+}
+#container {
+  display: flex;
+  height: auto;
+  width: 25%;
+  margin-left: 100px;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-left: 80px;
+}
+
+h1 {
+  color: grey;
+}
+.inputstyle {
+  width: 90%;
+  height: 25px;
+  /* margin-top: 50px; */
+  /* justify-content: space-between; */
+  margin-bottom: 20px;
+  margin: 2px;
+  border: none;
+  border-bottom: 1px solid grey;
+  /* margin-left: 20px; */
+}
+#login {
+  width: 95%;
+  height: 50px;
+  text-align: center;
+  color: rgb(70, 67, 67);
+  background-color: grey;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  font-size: 20px;
+}
+
+.space {
+  margin-bottom: 30px;
+}
+
+.radioDiv {
+  margin-top: 100px;
+  font-size: 30px;
+  color: gray;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+#box {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
