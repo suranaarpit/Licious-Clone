@@ -40,18 +40,18 @@ muttondata.map(function(e,index,array){
     var price=document.createElement("h5");
     price.innerText=e.price;
     var strikePrice=document.createElement("strike");
-    strikePrice.innerText=e.strikePrice;
+    strikePrice.innerText="₹" + e.strikedPrice;
 
 
     var btndiv=document.createElement("div");
     btndiv.setAttribute("class","btndiv");
    var  addCart=document.createElement("button");
    addCart.setAttribute("class","addcartbtn");
-   addCart.innerHTML="Add to Cart";
+   addCart.innerHTML="ADD TO CART";
 
 
     wgt.append(net_tag,net,n_gm,gross_tag,gross,g_gm);
-    pri.append(price_tag,cuurency,price,addCart);
+    pri.append(price_tag,cuurency,price,strikePrice,addCart);
     // btndiv.append(addCart)
     
     main.append(img,name,des,wgt,pri);

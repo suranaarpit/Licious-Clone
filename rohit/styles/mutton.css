@@ -2,6 +2,36 @@
 * {
   font-family: Lato;
 }
+.refermain {
+  display: flex;
+  margin-left: 150px;
+  font-weight: 900;
+  font-size: 15px;
+}
+#chickenHead {
+  color: red;
+}
+a {
+  text-decoration: none;
+}
+.atultoday:hover {
+  color: red;
+}
+a:hover {
+  color: red;
+}
+a:visited {
+  color: black;
+}
+.head {
+  margin-left: 150px;
+  /* padding-left:50px */
+}
+.bar {
+  margin-left: 150px;
+  margin-right: 200px;
+}
+
 #container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -113,9 +143,9 @@ h6 {
   height: 30px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(233, 78, 76);
+  background-color: #e41d36;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   padding-right: 10px;
   cursor: pointer;
 }

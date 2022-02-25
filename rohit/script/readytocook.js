@@ -1,7 +1,6 @@
-var eggsdata=JSON.parse(localStorage.getItem("eggsdata"))||[];
-console.log("eggsdata",eggsdata);
-
-eggsdata.map(function(e,index,array){
+var readytocookdata=JSON.parse(localStorage.getItem("readytocookdata"))||[];
+console.log("muttondata",readytocookdata);
+readytocookdata.map(function(e,index,array){
     var main= document.createElement("div");
     main.setAttribute("class","main");
     var img=document.createElement("img");
@@ -15,12 +14,6 @@ eggsdata.map(function(e,index,array){
     des.innerText=e.des;
     var wgt=document.createElement("div");
     wgt.setAttribute("class","wgt");
-
-    var pcs = document.createElement("h6");
-    pcs.innerText= e.pieces_tag
-    var pcsnum = document.createElement("h6");
-    pcsnum.innerText= e.pieces
-
     var net_tag=document.createElement("h6");
     net_tag.innerText=e.net_tag;
 
@@ -47,19 +40,18 @@ eggsdata.map(function(e,index,array){
     var price=document.createElement("h5");
     price.innerText=e.price;
     var strikePrice=document.createElement("strike");
-    strikePrice.innerText=e.strikePrice;
+    strikePrice.innerText="₹" + e.strikedPrice;
 
 
     var btndiv=document.createElement("div");
     btndiv.setAttribute("class","btndiv");
    var  addCart=document.createElement("button");
    addCart.setAttribute("class","addcartbtn");
-   addCart.innerHTML="Add to Cart";
+   addCart.innerHTML="ADD TO CART";
 
 
-    // wgt.append(net_tag,net,n_gm,gross_tag,gross,g_gm);
-    wgt.append(pcs,pcsnum);
-    pri.append(price_tag,cuurency,price,addCart);
+    wgt.append(net_tag,net,n_gm);
+    pri.append(price_tag,cuurency,price,strikePrice,addCart);
     // btndiv.append(addCart)
     
     main.append(img,name,des,wgt,pri);
