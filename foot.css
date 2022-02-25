@@ -1,0 +1,51 @@
+.big{
+    display: flex;
+    justify-content: center; 
+}
+#container{
+    width: 85%;
+    height: 1250px;
+    /* border: 1px solid black;   */
+   
+
+}
+#container>img{
+    width: 120px;
+    height: 46px;
+    padding-left: 10px;
+}
+#line{
+    line-height: 24px;
+}
+#box{
+    display: flex;
+}
+#min>img{
+    width: 120px;
+    padding-top: 12px;
+}
+#container>div{
+
+    justify-content: space-evenly;
+}
+#keep{
+    text-align: center;
+
+}
+#space>p{
+    display: flex;
+    word-spacing: 1rem;
+    line-height: 38px;
+    letter-spacing: 1.px;
+}
+#center{
+    display: flex;
+    justify-content: center;
+    
+}
+#center>img{
+   height: 15px;
+   width: 15px;
+   padding-top: 20px;
+}
+
