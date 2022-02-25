@@ -17,6 +17,5 @@ function ganerateForm(event) {
 
   addressdata.push(addresobj);
   localStorage.setItem("addressdata", JSON.stringify(addressdata));
-  // var x = document.querySelector("#A1");
-  // x.style.color = "red";
+  document.querySelector(".radioDiv>#address").style.color = "green";
 }
