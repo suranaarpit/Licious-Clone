@@ -1,51 +1,62 @@
 .big{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
-#container{
-    width: 85%;
-    height: 1250px;
-    /* border: 1px solid black;   */
-   
-
+#rao1{
+    width: 80%;
+    height: 1200px;
+    /* border: 1px solid black; */
+    
 }
-#container>img{
+#rao1>img{
     width: 120px;
     height: 46px;
-    padding-left: 10px;
+    padding-left: 6px;
 }
-#line{
-    line-height: 24px;
-}
-#box{
+#rao2{
     display: flex;
+    justify-content: center;
+    line-height: 14px;
+    justify-content: space-between;
+    
 }
-#min>img{
+#rao3>img{
     width: 120px;
     padding-top: 12px;
+    margin-top: -15%;
 }
-#container>div{
-
-    justify-content: space-evenly;
-}
-#keep{
-    text-align: center;
-
-}
-#space>p{
+#rao4{
     display: flex;
-    word-spacing: 1rem;
-    line-height: 38px;
-    letter-spacing: 1.px;
-}
-#center{
-    display: flex;
+    align-items: center;
     justify-content: center;
     
 }
-#center>img{
-   height: 15px;
-   width: 15px;
-   padding-top: 20px;
+#rao5>p{
+    display: flex;
+    word-spacing: 1rem;
+    line-height: 32px;
+    letter-spacing: 1.px;
 }
+#rao8{
+    display: flex;
+    justify-content: center;
+}
+#rao9{
+    left: 10%;
+    margin-right: -5px;
 
+}
+#rao10{
+    left:10%;
+    margin-right: -90px;
+}
+#rao11{
+    margin-right: -50px;
+}
+#rao12{
+    margin-right: -125px;
+    margin-top: -2%;
+}
+#rao9>h4{
+    font-size: 15.48px;
+}
