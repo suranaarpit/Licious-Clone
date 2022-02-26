@@ -1,4 +1,6 @@
+
 .big{
+    padding: 50px;
     display: flex;
     justify-content: center;
 }
@@ -14,6 +16,7 @@
     padding-left: 6px;
 }
 #rao2{
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     line-height: 14px;
@@ -59,4 +62,7 @@
 }
 #rao9>h4{
     font-size: 15.48px;
+}
+.expe{
+    cursor: pointer;
 }

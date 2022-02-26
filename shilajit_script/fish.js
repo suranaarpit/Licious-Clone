@@ -57,7 +57,9 @@ fishData.map(function(e,index,array){
    var  addCart=document.createElement("button");
    addCart.setAttribute("class","addcartbtn");
    addCart.innerText="Add to Cart";
-
+   addCart.addEventListener("click", function () {
+    addToCart(e);
+});
     
     wgt.append(net_tag,net,n_gm,gross_tag,gross,g_gm);
     
@@ -70,3 +72,14 @@ fishData.map(function(e,index,array){
 })
 
     }
+    function addToCart(e){
+        e.quant=1
+        cardArr.push(e)
+       localStorage.setItem("cardArr", JSON.stringify(cardArr));
+        display(cardArr);
+        subto();
+        addE()
+       console.log(cardArr)
+    
+      };
+      

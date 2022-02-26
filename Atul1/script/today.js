@@ -48,6 +48,10 @@ todaydata.map(function (e, index, array) {
   addCart.setAttribute("class", "addcartbtn");
   addCart.innerHTML = "Add to Cart";
 
+    addCart.addEventListener("click", function () {
+        addToCart(e);
+    });
+    
   wgt.append(net_tag, net, n_gm, gross_tag, gross, g_gm);
   pri.append(price_tag, cuurency, price, strikePrice, addCart);
   // btndiv.append(addCart)
@@ -55,3 +59,13 @@ todaydata.map(function (e, index, array) {
   todaymain.append(img, name, des, wgt, pri);
   document.querySelector("#container").append(todaymain);
 });
+function addToCart(e){
+  e.quant=1
+  cardArr.push(e)
+ localStorage.setItem("cardArr", JSON.stringify(cardArr));
+  display(cardArr);
+  subto();
+  addE()
+ console.log(cardArr)
+
+};

@@ -27,12 +27,12 @@ function getMobile(){
     //     }
     // }
 
-    if(m.length ==10){
+    if(m.length == 10){
 
-        alert("Your OTP is 123456")
+        alert("123456 is the OTP to access your Licious account. Do not share this with anyone. Thank you for using Licious. - Licious")
     }
     else if(m.length>10){
-        alert("Enter a valid mobile number")
+        alert("Please!! Enter a Valid Mobile 📱 Number")
     }
 
 }
@@ -54,17 +54,18 @@ function getOtp(event){
       logout.style.display = "block"
       document.querySelector("#mobile").value = "";
       document.querySelector("#onetimepass").value = "";
-      localStorage.setItem("confirm", JSON.stringify("1"))
+      localStorage.setItem("confirm", "1")
       
         // otp="";
     }
 }
+
+
 document.querySelector("#confirmLogin").addEventListener("click",function(event){
     getOtp();
 })
 function logoutFun(){
-    var a = JSON.parse(localStorage.getItem("confirm"))
-    if(a!=null){
+    // if(a!){
         var login = document.querySelector("#login")
         login.style.display = "block";
         // document.querySelector("#loginside").classList.remove("loginactive")
@@ -72,15 +73,21 @@ function logoutFun(){
         // cLogin.style.display = "none";
       var logout = document.querySelector("#logouttext")
       logout.style.display = "none"
-    }
+      localStorage.setItem("confirm", "0")
+    // }
     
 }
-
-// document.querySelector("#confirmLogin").addEventListener("click",loginDone)
-// function loginDone(event){
-//     event.preventDefault();
-
-//     if(Number(x)==12345){
-//         console.log("hi user")
-//     }
-// }
+var a = JSON.parse(localStorage.getItem("confirm"))
+if(a=="1"){
+    var login = document.querySelector("#login")
+        login.style.display = "none";
+        var logout = document.querySelector("#logouttext")
+      logout.style.display = "block"
+}
+else{
+    
+    var login = document.querySelector("#login")
+        login.style.display = "block";
+        var logout = document.querySelector("#logouttext")
+      logout.style.display = "none";
+}

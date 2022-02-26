@@ -1,14 +1,27 @@
 #cartside{
-    background-color: white;
+    /* background-color: white;
     position: fixed;
     top: 0;
     right: -100%;
-    /* right: 0; */
     width: 400px;
-    height: 100vh;
+    height: auto;
     z-index: 2000;
     transition: .5s ease;
-    box-shadow: rgb(0, 0, 0) 0px 30px 90px;
+    box-shadow: rgb(0, 0, 0) 0px 30px 90px; */
+    margin: 0;
+    padding: 0;
+    width: 430px;
+    background-color: white;
+    position: fixed; 
+    z-index: 2000;
+    top:0;
+    right: -100%;
+    height: 100%;
+    /* right:0; */
+    /* width: 400px; */
+    transition: .5s ease;
+    box-shadow: rgb(0, 0, 0) 0px 30px 90px; 
+    overflow: auto;
 }
 .cartactive{
     right: 0!important;
@@ -17,7 +30,7 @@
     position: fixed;
     display: none;
     top: 0;
-    right: 400px;
+    right: 30px;
     font-size: 50px;
     cursor: pointer;
     
@@ -27,3 +40,105 @@
     width: 30px;
     height: 30px;
 }
+
+#addproduct{
+    margin: auto;
+    margin-top: 20%;
+    width: 90%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
+}
+
+.pricep{
+    display: flex;
+}
+
+ button {
+     color: red;
+     width: auto;
+     height: 30px;
+     font-size: large;
+     margin-top: 4%;
+     border: 1px solid white;
+     
+     
+     /* width: 15px;
+     height: 15px; */
+ }
+
+ #btu1{
+    margin-left: 15%;
+    margin-top: -4%;
+ }
+ #btu2 {
+     margin-left: 10px;
+     margin-top: -4%;;
+ }
+ #qunty{
+     margin-left: 10px;
+     margin-top: -3%;
+ }
+ #price{
+     color: red;
+     margin: 5%;
+     font-size: 12px;
+     margin-top: -4%;
+ }
+ #gram{
+     margin-top: -5%;
+     width: 70px;
+     height: 25px;
+     color: rgb(99, 96, 96);
+     border: 1px solid  rgb(99, 96, 96);
+     background-color: white;
+     border-radius: 5px;
+     font-size: 12px;
+     margin-left: 38px;
+ }
+ #div4{
+     display: flex;
+     margin-left: 5px;
+     margin-bottom: 0px;
+ }
+ #no {
+     background-color: rgb(233, 227, 227);
+     width: 20px;
+     text-align: center;
+     margin-top: 10px;
+ }
+
+ #name {
+     margin-left: 10px;
+     margin-top: 10px;
+     font-size: 18px;
+     color: black;
+     font-family:bold;
+
+     margin-bottom: 0px;
+ }
+
+ #same{
+     margin-top: 5%;
+     width: 90%;
+     height: 200px;
+     border: 1px rgb(95, 94, 94) dashed;
+     margin: auto;
+ }
+
+ #total {
+    font-size: 20px;
+     margin-top:  25%;
+     color: red;
+ }
+
+ #aa{
+    font-size: 25px; margin-left: 8%; margin-top: 5%;
+   }
+
+   #sa {
+       width: 100%; height: 50px; color: white; background-color: green; text-align: center; margin-top: 5%;
+    }
+ #sa > h3 {
+   padding-top: 10px;
+ }    

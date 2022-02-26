@@ -55,7 +55,9 @@ console.log("combodata",combodata);
    var  addCart=document.createElement("button");
    addCart.setAttribute("class","addcartbtn");
    addCart.innerText="Add to Cart";
-
+   addCart.addEventListener("click", function () {
+    addToCart(e);
+});
 
     wgt.append(net_tag,net,n_gm,gross_tag,gross,g_gm);
     
@@ -68,3 +70,13 @@ console.log("combodata",combodata);
 })
 
     }
+    function addToCart(e){
+        e.quant=1
+        cardArr.push(e)
+       localStorage.setItem("cardArr", JSON.stringify(cardArr));
+        display(cardArr);
+        subto();
+        addE()
+       console.log(cardArr)
+    
+      };

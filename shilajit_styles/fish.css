@@ -23,7 +23,7 @@ body{
   justify-content: space-evenly;
   border-radius: 10px;
   /* margin-left: 50px; */
-  box-shadow: rgba(99, 99, 99, 0.2) 10px 2px 8px 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   margin-top: 20px;
 }
 .image {
@@ -117,10 +117,10 @@ h6 {
   height: 30px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(233, 78, 76);
+  background-color: crimson;
   color: white;
-  font-size: 10px;
-  padding-right: 10px;
+  font-size: 15px;
+    padding-right: 10px;
   cursor: pointer;
 }
 /* refer */
@@ -130,20 +130,30 @@ margin-left: 150px;
 font-weight: 900;
 font-size: 15px;
 }
-.refermain:hover {
+/* .refermain:hover {
   color: red;
-}
+} */
+
 a{
   
   text-decoration: none;
+  color: black;
   
 }
-a:hover{
+#texthover{
+  color: red;
+}
+#refhome>a:hover{
+  color: red;
+}
+/* a:hover{
   color: red;
 }
 a:visited {
   color: black;
-}
+} */
+
+
 .head{
   margin-left: 150px;
   width: 77%;

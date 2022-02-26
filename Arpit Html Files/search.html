@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="/Styles/searchinput.css">
     <link rel="stylesheet" href="/Styles/cartsidebar.css">
+    <link rel="stylesheet" href="/Styles/loginsidebar.css">
 
 </head>
 <body>
@@ -111,18 +112,87 @@
                 </div>
             </div>
         </div>
-<!-- cart sidebar -->
-<div id="cartside">
-    <div id="closecart">
-        x
-    </div>
-</div>
 
+
+        
 <!-- search result -->
 
 <div id="searchResult">
 
 </div>
+
+
+<!-- cart sidebar -->
+
+<div id="cartside">
+    <div id="aa">Order Summary</div>
+    <div  id="sa"><h3>Delivery Charges on all Product is Rs. 39</h3></div>
+    <div id="closecart">
+       
+        <img class="close" src="/Downloaded Images/cross.png" alt="close">
+    </div>
+    <div id="addproduct"></div>
+    <div id="same">
+      <h3 style="margin-left: 18%;">BILL DETAILS</h3>
+      
+      <div style="display: flex; height: 200px;  margin-left: 2%; justify-content: space-around;">
+        <div>
+            <div>Subtotal</div>
+            <div> Delivery Charge</div>
+            <div>Discount</div>
+            <div style="font-size: 20px; margin-top:  5%;"> Total</div>
+        </div>
+        <div>
+            <div id="stotal">0</div>
+            <div id="dctotal">39</div>
+            <div id="dtotal">0</div>
+            <div id="total" style="margin-top:  15%;">0</div>
+        </div>
+
+       
+    </div>
+    <div style="margin: auto; width: 80%;"><button style="background-color: red; color: white; width: 100%; height: 70px; font-size: 20px; border-radius: 10px;"><a style="text-decoration: none; color: white; cursor: pointer;" href="/Arpit Html Files/Address.html">Add Address</a></button></div>      </div>
+    
+    </div>
+</div>
+
+<!-- Login Side bar Imp -->
+<div id="loginside">
+    <div id = "closelogin">
+        <img class="close" src="https://atlona.com/wp-content/uploads/2016/08/close-button.png" alt="close">
+    </div>
+    <div id="loginimgbanner">
+        <img src="https://www.licious.in/img/default/logo-white.png" alt="logo">
+        <!-- <img id="liciousloginbanner" src="https://www.licious.in/img/default/user-login.png" alt="Liciousbanner"> -->
+    </div>
+    <div class="logininfo">
+        <div class="logheading">
+            <p>Sign In/Sign Up</p>
+        </div>
+        <div class="loginform">
+            <div class="form">
+                <input type="number" onkeypress="getMobile()" id="mobile" placeholder="Enter Mobile Number">
+                <hr>
+            </div>
+            <h3 id="otphead">
+                Enter OTP
+            </h3>
+            <div class="otp">
+                <input type="number" onkeypress="getOtp()" id="onetimepass" placeholder="Enter OTP">
+                <hr id="line">
+                <!-- <input type="button" placeholder="Get OTP"> -->
+            </div>
+            
+        <div id="proceed">
+            <a href="#"><button id="confirmLogin">proceed Via OTP</button></a>
+        </div>
+        <p class="signing">
+            By signing in you agree to our <a class="tC" href="#">terms and conditions</a>
+        </p>
+        </div>
+    </div>
+
+
 </body>
 </html>
 
@@ -130,3 +200,5 @@
 <script src="/javaScript/searchbar.js"></script>
 <script src="/javaScript/citiylocater.js"></script>
 <script src="/javaScript/cartsidebar.js"></script>
+<script src="/javaScript/LoginSidebar.js"></script>
+<script src="../shilajit_data/alldata.js"></script>

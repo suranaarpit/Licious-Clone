@@ -1,3 +1,4 @@
+
 function showCities(){
 
 var cities = document.getElementById("location").value;

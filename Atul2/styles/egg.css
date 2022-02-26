@@ -20,7 +20,7 @@
   justify-content: space-evenly;
   border-radius: 10px;
   /* margin-left: 50px; */
-  box-shadow: rgba(99, 99, 99, 0.2) 10px 2px 8px 0px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   margin-top: 20px;
 }
 .image {
@@ -118,8 +118,8 @@ h6 {
   border: none;
   background-color: #e41d36;
   color: white;
-  font-size: 10px;
-  padding-right: 10px;
+  font-size: 15px;
+    padding-right: 10px;
 }
 .refermain{
   display: flex;

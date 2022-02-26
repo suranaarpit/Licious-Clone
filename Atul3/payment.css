@@ -67,6 +67,7 @@ a{
     text-decoration: none;
     padding: 10px;
     font-size: 18px;
+    font-weight: bolder;
     transition: 0.5s;
 }
 
