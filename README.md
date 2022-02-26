@@ -1,7 +1,7 @@
 
 # Licious-clone
 
-This is our first project at Masai School Unit-2 construct week after learning HTML, CSS & JAVASCRIPT. Here is the link of our website live on netlify: 
+This is our first project at Masai School Unit-2 construct week after learning HTML, CSS & JAVASCRIPT. Here is the link of our website live on netlify: https://licious.netlify.app/
 
 
 ## Contributors
