@@ -133,6 +133,8 @@ The Contributors for this project are:
 
 * The Mutton, Ready to cook & Super Saver data collection and functioned by Rohit.
 
+* Payment Page is created by Atul.
+
 * The Footer Part is designed by Rajan.
 ## Challenges :-
 
